@@ -161,34 +161,34 @@
 
             <div class="details-container">
             
-<table id="personal-info">
-  <tbody>
-    <tr>
-      <td>First Name:</td>
-      <td contenteditable="true" id="first-name">Baby</td>
-    </tr>
-    <tr>
-      <td>Last Name:</td>
-      <td contenteditable="true" id="last-name">Lou</td>
-    </tr>
-    <tr>
-      <td>UserID:</td>
-      <td contenteditable="false" id="user-id">1658874</td>
-    </tr>
-    <tr>
-      <td>Contact#:</td>
-      <td contenteditable="true" id="contact">09647557474</td>
-    </tr>
-    <tr>
-      <td>Address:</td>
-      <td contenteditable="true" id="address">143 Trinity Avenue Cubao Q.C</td>
-    </tr>
-  </tbody>
-</table>
-
-<button class="edit-btn" onclick="editTable()">Edit</button>
-<button class="save-btn" onclick="saveTable()">Save</button>
-
+                <table>
+                    <tbody>
+                      <tr>
+                        <td>First Name:</td>
+                        <td style="text-align: center;" contenteditable="false"> Baby</td>
+                      </tr>
+                      <tr>
+                        <td>Last Name</td>
+                        <td style="text-align: center;" contenteditable="false">Lou</td>
+                      </tr>
+                      <tr>
+                        <td>Email: </td>
+                        <td style="text-align: center;" contenteditable="false">girly.girl@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Contact#:</td>
+                        <td style="text-align: center;" contenteditable="false">09457874155</td>
+                      </tr>
+                      <tr>
+                        <td>Address:</td>
+                        <td style="text-align: center;" contenteditable="false">143 Trinity Ave Cubao</td>
+                      </tr>
+                    </tbody>
+                </table>
+        
+                <div class="editProfile">
+                    <button id="editButton" class="editButton" onclick="editDetails()">Edit Details</button>
+                </div>
 
 
 <div class="expertise-details">
@@ -233,23 +233,46 @@
         <!-- =========== Scripts =========  -->
 
         <script>
-            function editTable() {
-              // Set the 'contenteditable' attribute to true for all cells in the table
-              var cells = document.querySelectorAll("#personal-info td[contenteditable='true']");
-              cells.forEach(function(cell) {
-                cell.setAttribute("contenteditable", true);
-                cell.style.backgroundColor = "#ffffcc";
-              });
-            }
-          
-            function saveTable() {
-              // Set the 'contenteditable' attribute to false for all cells in the table
-              var cells = document.querySelectorAll("#personal-info td[contenteditable='true']");
-              cells.forEach(function(cell) {
-                cell.setAttribute("contenteditable", false);
-                cell.style.backgroundColor = "";
-              });
-            }
+         function toggleEdit() {
+    // Get all the td elements
+    const tds = document.getElementsByTagName("td");
+    // Loop through each td element
+    for (let i = 0; i < tds.length; i++) {
+      // Toggle the contenteditable attribute between true and false
+      tds[i].contentEditable = tds[i].contentEditable === "true" ? "false" : "true";
+    }
+  }
+
+  function editDetails() {
+    // Get the button element
+    var editButton = document.getElementById("editButton");
+  
+    // Get the table element
+    var table = document.getElementsByTagName("table")[0];
+  
+    if (editButton.innerHTML === "Edit Details") {
+      // Change the button text to "Save"
+      editButton.innerHTML = "Save";
+  
+      // Enable editing of table cells
+      for (var i = 0; i < table.rows.length; i++) {
+        for (var j = 0; j < table.rows[i].cells.length; j++) {
+          table.rows[i].cells[j].contentEditable = "true";
+        }
+      }
+    } else {
+      // Change the button text back to "Edit Details"
+      editButton.innerHTML = "Edit Details";
+  
+      // Disable editing of table cells
+      for (var i = 0; i < table.rows.length; i++) {
+        for (var j = 0; j < table.rows[i].cells.length; j++) {
+          table.rows[i].cells[j].contentEditable = "false";
+        }
+      }
+    }
+  }
+            
           </script>
 
 

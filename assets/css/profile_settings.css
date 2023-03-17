@@ -342,58 +342,28 @@ table {
 }
 
 
-.edit-btn {
-	box-shadow: 3px 4px 0px 0px #8a2a21;
-	background:linear-gradient(to bottom, #dca56a 5%, #dca56a 100%);
-	background-color:#dca56a;
-	border-radius:18px;
-	border:1px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:2px 0px 0px #810e05;
+.editProfile {
+  text-align: end;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.edit-btn:hover {
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#dca56a;
-}
-.edit-btn:active {
-	position:relative;
-	top:1px;
-}
+
+.editButton {
   
-       
-
-.save-btn {
-	box-shadow: 3px 4px 0px 0px #8a2a21;
-	background:linear-gradient(to bottom, #2d4b5a 5%, #2d4b5a 100%);
-	background-color:#dca56a;
-	border-radius:18px;
-	border:1px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:2px 0px 0px #810e05;
+  text-align: center;
+  border-radius: 25px;
+  background-color:  #2d4b5a;
+  height: 30px;
+  width: 100px;
+  border: 0;
+  cursor: pointer;
+  color: #dca56a;
 }
-.save-btn:hover {
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#dca56a;
+.editButton:hover {
+  background-color: #2d4b5a;;
+  color: #dca56a;
+  transition: all .5s ease;
 }
-.save-btn:active {
-	position:relative;
-	top:1px;
-}
-
-
-
 .expertise-details {
 
 
