@@ -20,6 +20,7 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -54,6 +55,7 @@ body {
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  font-size: 1.3rem;
 }
 
 .navigation ul li:hover,
@@ -392,7 +394,6 @@ body {
 }
 
 
-
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {
@@ -456,11 +457,18 @@ body {
     left: initial;
   }
 
+.chart {
+
+  width: 100%;
+padding: 0.1rem;
+}
+
   .container-charts {
 width: 100%;
 padding: 0.1rem;
   }
 
+   
   .details {
 
     width: 100%;

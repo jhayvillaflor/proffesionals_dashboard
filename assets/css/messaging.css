@@ -54,6 +54,7 @@ body {
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  font-size: 1.3rem;
 }
 
 .navigation ul li:hover,
@@ -312,7 +313,7 @@ body {
 }
 .therapists table tr td {
   padding: 12px 10px; 
-  border: 1.5px solid #2d4b5a;
+  
 }
 .therapists table tr td h4 {
   font-size: 16px;

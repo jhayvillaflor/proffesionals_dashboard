@@ -144,39 +144,50 @@
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
                 </div>
-        
+                <div class="proffesional-aboutme">
+                    <h2>About Me</h2>
+                    <p>My name is Baby Lou and I am a certified massage therapist with 3 years of experience. My passion is to help my clients relieve their stress and pain through the power of touch. I offer a variety of massage techniques including Swedish Massage, Thai Massage, Ventosa, Acupuncture.</p>
+                  <br>
+                    <h2>Certifications and Training</h2>
+                    <ul>
+                      <li>Hagod Manila Massage Training Center- Massage Therapy NC II - 2020</li>
+                      <li>SPAce Training Center- Massage Therapy Certification - 2021 </li>
+                    </ul>
+            
+            
+                </div>
             </div>
 
 
             <div class="details-container">
             
-<table>
-<tbody>
-<div id="editbutton"> <a href="edit_profile.html"><button>Edit Details</button></a> </div>
-
+<table id="personal-info">
+  <tbody>
     <tr>
       <td>First Name:</td>
-      <td style="text-align: center;"> Baby</td>
+      <td contenteditable="true" id="first-name">Baby</td>
     </tr>
     <tr>
-      <td>Last Name</td>
-      <td style="text-align: center;">Lou</td>
+      <td>Last Name:</td>
+      <td contenteditable="true" id="last-name">Lou</td>
     </tr>
     <tr>
-      <td>Email: </td>
-      <td style="text-align: center;">girly.girl@gmail.com</td>
+      <td>UserID:</td>
+      <td contenteditable="false" id="user-id">1658874</td>
     </tr>
     <tr>
       <td>Contact#:</td>
-      <td style="text-align: center;">09457874155</td>
+      <td contenteditable="true" id="contact">09647557474</td>
     </tr>
     <tr>
-        <td>Address:</td>
-        <td style="text-align: center;">143 Trinity Ave Cubao</td>
-      </tr>
-
+      <td>Address:</td>
+      <td contenteditable="true" id="address">143 Trinity Avenue Cubao Q.C</td>
+    </tr>
   </tbody>
 </table>
+
+<button class="edit-btn" onclick="editTable()">Edit</button>
+<button class="save-btn" onclick="saveTable()">Save</button>
 
 
 
@@ -212,18 +223,7 @@
 
             </div>
         </div>
-        <div class="proffesional-aboutme">
-        <h2>About Me</h2>
-        <p>My name is Baby Lou and I am a certified massage therapist with 3 years of experience. My passion is to help my clients relieve their stress and pain through the power of touch. I offer a variety of massage techniques including Swedish Massage, Thai Massage, Ventosa, Acupuncture.</p>
-      <br>
-        <h2>Certifications and Training</h2>
-        <ul>
-          <li>Hagod Manila Massage Training Center- Massage Therapy NC II - 2020</li>
-          <li>SPAce Training Center- Massage Therapy Certification - 2021 </li>
-        </ul>
-
-
-    </div>
+    
 
         
     </div>
@@ -231,6 +231,28 @@
 
 
         <!-- =========== Scripts =========  -->
+
+        <script>
+            function editTable() {
+              // Set the 'contenteditable' attribute to true for all cells in the table
+              var cells = document.querySelectorAll("#personal-info td[contenteditable='true']");
+              cells.forEach(function(cell) {
+                cell.setAttribute("contenteditable", true);
+                cell.style.backgroundColor = "#ffffcc";
+              });
+            }
+          
+            function saveTable() {
+              // Set the 'contenteditable' attribute to false for all cells in the table
+              var cells = document.querySelectorAll("#personal-info td[contenteditable='true']");
+              cells.forEach(function(cell) {
+                cell.setAttribute("contenteditable", false);
+                cell.style.backgroundColor = "";
+              });
+            }
+          </script>
+
+
     <script src="assets/js/main.js"></script>
 
     <!-- ====== ionicons ======= -->

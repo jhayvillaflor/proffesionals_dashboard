@@ -54,6 +54,7 @@ body {
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  font-size: 1.3rem;
 }
 
 .navigation ul li:hover,
@@ -226,6 +227,7 @@ body {
 
 padding: 2rem;
 display: inline-flex;
+height: 100%;
 
 
 }
@@ -233,8 +235,8 @@ display: inline-flex;
 .card {
 
   margin-top: 2.5rem;
-  height: 400px;
-  width: 500px;
+  height: 800px;
+  width: 650px;
   border-radius: 15px;
   background-color:  #2d4b5a;
   text-align: center;
@@ -298,8 +300,9 @@ display: inline-flex;
 .details-container {
 margin-left: 2rem;
 margin-top: 1rem;
-
 width: 700px;
+height: 800px;
+
 }
 .details-container h2 {
   margin: 0;
@@ -325,10 +328,79 @@ table {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 0.5rem;
-  font-size: 14px;
+  font-size: 24px;
   background-color: #2d4b5a;
   color: #dca56a;
+  height: 50%;
+  
+ 
 }
+.table-container {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+
+.edit-btn {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #dca56a 5%, #dca56a 100%);
+	background-color:#dca56a;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:2px 0px 0px #810e05;
+}
+.edit-btn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#dca56a;
+}
+.edit-btn:active {
+	position:relative;
+	top:1px;
+}
+  
+       
+
+.save-btn {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #2d4b5a 5%, #2d4b5a 100%);
+	background-color:#dca56a;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:2px 0px 0px #810e05;
+}
+.save-btn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#dca56a;
+}
+.save-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.expertise-details {
+
+
+  margin-top: 2rem;
+}
+
+
 
 th, td {
   border: 1px solid #dca56a;
@@ -366,19 +438,28 @@ tbody td {
 
 .proffesional-aboutme {
   margin: 0;
-  padding: 0;
-  width: 750px;
-
+  padding: 2rem;
+  width: 100%;
+text-align: left;
+text-overflow: clip;
 }
+.proffesional-aboutme h2{
+  margin-top: 1rem;
+  color: #dca56a;
+  ;;
+  font-weight: 800;
+  }
+
+
 
 .proffesional-aboutme p {
 margin-top: 1rem;
-
+color: #FEF1EF;;
 
 }
 
 .proffesional-aboutme ul li {
-
+  color: #FEF1EF;;
 list-style: none;
 padding: 0.5rem;
 }
