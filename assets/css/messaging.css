@@ -294,15 +294,11 @@ body {
   height: 40px;
   border-radius: 50px;
   overflow: hidden;
+  border: 1px solid black;
 }
 
-.therapists .btn  {
-  font-size: 19px;
-}
-.therapists .book-now {
-  background-color: var(--darkblue);
-  color: var(--gold);
-}
+
+
 .therapists .imgBx img {
   position: absolute;
   top: 0;
@@ -311,19 +307,33 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.therapists table tr {
+display: flex;
+}
+
+
 .therapists table tr td {
   padding: 12px 10px; 
-  
+  align-items: center;
+  justify-content: space-between;
+margin: 0;
 }
 .therapists table tr td h4 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2rem;
-  color: #dca56a;
+  color: #2d4b5a;
+  margin:0;
+  flex: 1;
+  text-align: left;
+
 }
+
 .therapists table tr td h4 span {
   font-size: 14px;
   color: #2d4b5a;
+ display: inline-flex;
+margin-right: 1000px;
 }
 .therapists table tr:hover {
   background:  #dca56a;
@@ -342,8 +352,80 @@ body {
 }
 
 .therapists table .icons {
-  float: right
+  float: right;
+ 
 }
+
+
+.cardHeader {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardHeader h2 {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+td:last-child {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 8px;
+}
+
+.imgBx {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+.buttons {
+  margin-top: 10px;
+  margin-left:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.replyBtn, .profileBtn {
+  background-color: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.replyBtn:hover, .profileBtn:hover {
+  background-color: #3266d8;
+}
+
+
+
 
 
 /* ====================== Responsive Design ========================== */
