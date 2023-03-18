@@ -334,6 +334,7 @@ margin: 0;
   color: #2d4b5a;
  display: inline-flex;
 margin-right: 1000px;
+
 }
 .therapists table tr:hover {
   background:  #dca56a;
@@ -342,6 +343,7 @@ margin-right: 1000px;
 }
 .therapists table tr:hover .btn {
   border: 1px solid var(--darkblue);
+
 }
 .therapists table tr:hover td h4 span {
   color: var(--white);
@@ -349,11 +351,6 @@ margin-right: 1000px;
 .therapists table tr .btn:hover {
   background-color: var(--darkblue);
   color: var(--white);
-}
-
-.therapists table .icons {
-  float: right;
- 
 }
 
 
@@ -371,19 +368,23 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+ 
+
 }
 
 td {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+ gap: 2rem;
+
 }
 
 td:last-child {
   text-align: right;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+ 
   padding: 8px;
+
 }
 
 .imgBx {
@@ -392,6 +393,8 @@ td:last-child {
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
+
+
 }
 
 .imgBx img {
@@ -402,16 +405,10 @@ td:last-child {
 }
 
 
-.buttons {
-  margin-top: 10px;
-  margin-left:10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
 
 .replyBtn, .profileBtn {
-  background-color: #3a86ff;
+  float: inline-end;
+  background-color: #2d4b5a;
   color: #fff;
   border: none;
   border-radius: 4px;
